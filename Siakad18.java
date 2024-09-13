@@ -9,8 +9,9 @@ public static void main(String[] args) {
      String nama, nim;
      char kelas;
      byte absen;
-     double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
- 
+     int nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
+     
+     //double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
      System.out.print("Masukkan nama: ");
      nama = sc.nextLine();
      System.out.print("Masukkan NIM: ");
@@ -21,20 +22,18 @@ public static void main(String[] args) {
      absen = sc.nextByte();
  
      System.out.print("Masukkan nilai kuis: ");
-     nilaiKuis = sc.nextDouble();
+     nilaiKuis = sc.nextInt();
      System.out.print("Masukkan nilai tugas: ");
-     nilaiTugas = sc.nextDouble();
+     nilaiTugas = sc.nextInt();
      System.out.print("Masukkan nilai ujian: ");
-     nilaiUjian = sc.nextDouble();
-     
-     //menghitung nilai akhir
+     nilaiUjian = sc.nextInt();
+    
+     nilaiKuis = (nilaiKuis*);
      nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUjian) / 3;
- 
- 
+
      System.out.println("Nama: " +  nama   + " NIM: " + nim);
      System.out.println("Kelas: " + kelas + " Absen: " + absen);
      System.out.println("Nilai akhir: " + nilaiAkhir );
 }
-
 
 }
